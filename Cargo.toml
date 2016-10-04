@@ -1,0 +1,19 @@
+[package]
+name = "hwrng"
+version = "0.1.0"
+authors = ["Emīls Piņķis <pinkisemils@gmail.com>"]
+
+
+[dependencies]
+rand = "0.3"
+time = "0.1"
+num_cpus = "0.2"
+
+[profile.bench]
+opt-level = 3
+debug = true
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'
